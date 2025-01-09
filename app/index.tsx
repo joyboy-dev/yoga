@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { router } from 'expo-router'
+import WelcomePage from './WelcomePage'
 
 const Entrypoint = () => {
     const [valuechange, setvaluechange] = useState(false)
@@ -16,7 +17,8 @@ const Entrypoint = () => {
 
   return (
     <View style={{backgroundColor:"black", flex:1}}>
-      <Text style={{color:"white"}}> Entrypoint</Text>
+      
+      <WelcomePage></WelcomePage>
     </View>
   )
 }
